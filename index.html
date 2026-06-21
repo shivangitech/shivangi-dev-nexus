@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevNexus // Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+
+    <nav class="glass-nav">
+        <div class="logo">&lt;DevNexus /&gt;</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+        <button id="theme-btn" class="toggle-btn">🌙 Mode</button>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <span class="badge">BCA Web Developer & Designer</span>
+            <h1 class="glitch-text">Crafting Digital <span class="gradient-text">Experiences</span></h1>
+            <p class="lead">I bridge the gap between clean code and stunning visuals. Specializing in building scalable web applications with modern tech stacks.</p>
+            <div class="cta-group">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#skills" class="btn btn-secondary">Explore Skills</a>
+            </div>
+        </div>
+        <div class="hero-graphic">
+            <div class="glow-sphere"></div>
+        </div>
+    </header>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="grid">
+            <div class="project-card">
+                <div class="card-image bg-1"></div>
+                <div class="card-content">
+                    <h3>AI SaaS Platform UI</h3>
+                    <p>A futuristic dashboard with dark mode, interactive glassmorphism components, and live data charts.</p>
+                    <span class="tag">HTML / CSS / JS</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="card-image bg-2"></div>
+                <div class="card-content">
+                    <h3>E-Commerce Core</h3>
+                    <p>A minimalist shopping experience featuring micro-interactions and smooth page transitions.</p>
+                    <span class="tag">UI/UX / Animation</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="skills-container">
+            <div class="skill-box" onclick="showSkillDetails('Frontend Dev', 'HTML5, CSS3, Modern JavaScript, React Architecture, Responsive Layouts.')">
+                <span class="skill-icon">💻</span>
+                <h3>Frontend Architecture</h3>
+            </div>
+            <div class="skill-box" onclick="showSkillDetails('UI/UX Design', 'Figma Wireframing, Prototyping, Glassmorphism, Material Design Principles.')">
+                <span class="skill-icon">🎨</span>
+                <h3>UI/UX Engineering</h3>
+            </div>
+            <div class="skill-box" onclick="showSkillDetails('Database & Logic', 'SQL/NoSQL Databases, Data Structures, Core Java, API Integration.')">
+                <span class="skill-icon">⚙️</span>
+                <h3>Backend & Logic</h3>
+            </div>
+        </div>
+        <div id="dynamic-preview" class="preview-box">
+            <p>💡 Click on any skill card above to see dynamic tech details! (Demonstrating DOM Manipulation)</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
