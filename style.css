@@ -252,3 +252,63 @@ h1 {
     border-radius: 20px;
     cursor: pointer;
 }
+
+
+/* About & Skills Styling */
+.about-skills-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 40px;
+    padding: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.about-box, .skills-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(157, 78, 221, 0.2);
+    border-radius: 16px;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.about-box h2, .skills-box h2 {
+    color: #9d4edd;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(157, 78, 221, 0.5);
+}
+
+.about-box p {
+    color: #e0aaff;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-badge {
+    background: rgba(157, 78, 221, 0.1);
+    color: #c77dff;
+    border: 1px solid #9d4edd;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px rgba(157, 78, 221, 0.2);
+}
+
+.skill-badge:hover {
+    background: #9d4edd;
+    color: #fff;
+    box-shadow: 0 0 15px #9d4edd;
+    transform: translateY(-3px);
+}
